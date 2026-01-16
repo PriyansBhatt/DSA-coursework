@@ -4,15 +4,12 @@
  */
 package model;
 
-
-
-
-
 /**
  *
  * @author Priyans
  */
 public class Player implements java.io.Serializable {
+
     private static final long serialVersionUID = 1L;
 
     private String id;
@@ -20,34 +17,53 @@ public class Player implements java.io.Serializable {
     private int age;
     private double chips;
     private String status;
-    private String contact;
 
-    public Player(String id, String name, int age, double chips, String status, String contact) {
+    public Player(String id, String name, int age, double chips, String status) {
         this.id = id;
         this.name = name;
         this.age = age;
         this.chips = chips;
         this.status = status;
-        this.contact = contact;
     }
 
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
+    public String getId() {
+        return id;
+    }
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+    public void setId(String id) {
+        this.id = id;
+    }
 
-    public int getAge() { return age; }
-    public void setAge(int age) { this.age = age; }
+    public String getName() {
+        return name;
+    }
 
-    public double getChips() { return chips; }
-    public void setChips(double chips) { this.chips = chips; }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
+    public int getAge() {
+        return age;
+    }
 
-    public String getContact() { return contact; }
-    public void setContact(String contact) { this.contact = contact; }
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public double getChips() {
+        return chips;
+    }
+
+    public void setChips(double chips) {
+        this.chips = chips;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
 }
-
-    

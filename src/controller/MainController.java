@@ -3,13 +3,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package controller;
-import view.HomeView;
+import view.LoginView;
 /**
  *
  * @author Priyans
  */
 public class MainController {
     public static void main(String[] args) {
-        new HomeView().setVisible(true);
+        new LoginView().setVisible(true);
     }
 }
